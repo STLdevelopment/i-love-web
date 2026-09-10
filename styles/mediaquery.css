@@ -1,0 +1,20 @@
+main {
+    background-color: lightskyblue;
+    transition: .2s ease;
+}
+
+h1 {
+    font-size: clamp(1.375rem, 12.4514vw - 4.5939rem, 3.375rem);
+}
+
+@media (max-width: 1024px) {
+    main {
+        background-color: beige;
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        background-color: blueviolet;
+    }
+}
