@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supercool formulier</title>
+    <link rel="stylesheet" href="inputs.css">
+</head>
+
+<body>
+    <section>
+        <h1>Welkom bij Sun's questionnaire!</h1>
+        <form>
+            <label>
+                Vanaf welke datum is vreugd in jouw leven gekomen?
+                <input type="datetime-local" min="2003-04-19T00:00" max="2026-11-18T10:45">
+            </label>
+            <label>
+                Jouw verklaring hoe mijn aanwezigheid jouw leven heeft verbeterd.
+                <input type="file" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" multiple>
+            </label>
+            <label>
+                Hoeveel sterren geef je mij? (0-10)
+                <input type="range" min="0" max="10" step="1" value="10">
+            </label>
+            <label>
+                Zoek naar personen die hetzelfde denken zoals jij!
+                <input type="search" maxlength="30" placeholder="Bijv. iedereen uit Berkel en Rodenrijs"
+                    list="kandidaten">
+                <datalist id="kandidaten">
+                    <option value="Lou"></option>
+                    <option value="Justin"></option>
+                    <option value="Aliya"></option>
+                    <option value="Sam"></option>
+                    <option value="Lyanne"></option>
+                    <option value="Wesley"></option>
+                    <option value="Lyndsey"></option>
+                    <option value="Sun"></option>
+                </datalist>
+            </label>
+            <label>
+                <button type="submit">Verzenden</button>
+            </label>
+        </form>
+    </section>
+</body>
+
+</html>
